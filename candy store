@@ -1,0 +1,21 @@
+CREATE TABLE candystore(id INTEGER PRIMARY KEY, name TEXT, flavor TEXT, weight REAL, price INTEGER);
+INSERT INTO candystore VALUES(1,"Sour gummy worms","Sour", 20,10);
+INSERT INTO candystore VALUES(2,"gummy worms","Regular",20,10);
+INSERT INTO candystore VALUES(3,"Lemon heads","Sour",50,20);
+INSERT INTO candystore VALUES(4,"Skittles","Regular",30,30);
+INSERT INTO candystore VALUES(5,"Skittles","Sour",30,30);
+INSERT INTO candystore VALUES(6,"blue sharks","Regular",10,10);
+INSERT INTO candystore VALUES(7,"Swedish fish","Regular",25,10);
+INSERT INTO candystore VALUES(8,"Coke bottles","Regular",20,20);
+INSERT INTO candystore VALUES(9,"Coke bottles","Sour",20,20);
+INSERT INTO candystore VALUES(10,"Starburst","Regular",50,50);
+INSERT INTO candystore VALUES(11,"Sour patch kids","Sour",100,100);
+INSERT INTO candystore VALUES(12,"peach-o's","Sour",10,20);
+INSERT INTO candystore VALUES(13,"red licorice","Regular",10,20);
+INSERT INTO candystore VALUES(14,"black licorice","Regular",10,20);
+INSERT INTO candystore VALUES(15,"apple o's","Sour",10,20);
+
+SELECT * FROM candystore ORDER BY price;
+SELECT * FROM candystore ORDER BY flavor;
+SELECT MAX (price) FROM candystore;
+SELECT flavor, SUM(price) FROM candystore GROUP BY flavor;
