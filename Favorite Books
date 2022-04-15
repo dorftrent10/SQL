@@ -1,0 +1,6 @@
+CREATE TABLE favorite_books(id INTEGER, name TEXT, rating INTEGER);
+
+INSERT INTO favorite_books VALUES(1,"Where the sidewalk ends",10);
+INSERT INTO favorite_books VAlUES(2,"One dog two dog red dog blue dog",10);
+INSERT INTO favorite_books VALUES(3,"Lord Of The Rings,Trilogy",10);
+SELECT * FROM favorite_books;
